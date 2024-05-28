@@ -18,7 +18,7 @@ function submitForm(event) {
       const Paragraph = document.getElementById('paragraph').value;
       localStorage.setItem('Paragraph', Paragraph);
 
-      window.location.href = '/html/page1.html';
+      window.location.href = 'page1.html';
     }
 
 }
