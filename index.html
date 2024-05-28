@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Mental Health Philippines</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- START OF MAIN PAGE -->
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="MMHPH Logo">
+        </div>
+        <h1> MEN'S MENTAL HEALTH PHILIPPINES</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div class="text">
+                <p>Ang tunay na <br> lalaki, ay isang <br> lalaking totoo sa iba.</p>
+                <p>Ang tinuod nga <br> lalaki, mao ang <br> tawo nga tinuod <br> sa uban.</p>
+                <p>A real man, is a <br> man that is real to <br> others.</p>
+            </div>
+                <div class="sign-up">
+                <h1>SIGN UP NOW.</h1>
+
+                <button id="myBtn"> Sign-Up Manually</button>
+            </div>
+        </div>
+        <div class="collaboration">
+            <p>IN COLLABORATION WITH</p>
+            <a href="https://us.movember.com"> 
+                <img src="/images/movember.JPG" alt="Movember Foundation" >
+            </a>
+            <div class="creds">
+                <p>©️ 2023 MMHPH. All Rights Reserved</p>
+            </div>
+        </div>
+    </main>
+    <!-- END OF MAIN PAGE -->
+
+    <!-- START OF SIGN-UP SHEET -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content"> 
+    <form id="SignUp" onsubmit="submitForm(event)"> 
+
+        <div class="formheader">
+
+            <div class="formlogo">
+                <img src="/images/logo.png">
+            </div>
+
+            <div class="formheadertextbox">
+                <div class="formheadertext1">
+                    MMHPH   |   SIGN-UP
+                </div>
+
+                <div class="formheadertext2">
+                    Ang tunay na lalaki, ay isang lalaking tunay sa iba.
+                </div>
+            </div>
+
+        </div>
+
+    <div class="formbox">
+        <div class="rounder">
+            <fieldset>
+              <label for="gender" class="labeltext"> Name  <span style="color: red"> * </span> </label> <br>
+
+                <input type="text" id="Name1" name="FirstName" class="Name1" placeholder="My First Name *"> 
+                <div class="error-message1" id="errorMsg1"> Required* </div>
+
+                <input type="text" id="Name2" name="LastName" class="Name2" placeholder="My Last Name"> <br> <br>
+                <div class="error-message2" id="errorMsg2"> Required* </div>
+        
+              <label for="gender" class="labeltext"> Sex  <span style="color: red"> * </span> </label> <br>
+
+              <div class="radiobutton1">
+                <input type="radio" id="M" name="Sex" value="Male" class="radiocheck">
+                <label for="gender" class="radiotext1"> Male </label>
+              </div>
+              
+              <div class="radiobutton2">
+                <input type="radio" id="F" name="Sex" value="Female" class="radiocheck">
+                <label for="gender" class="radiotext1"> Female </label>
+              </div>
+              
+              <div class="radiobutton3">
+                <input type="radio" id="P" name="Sex" value="Prefer not to say" class="radiocheck" checked>
+                <label for="gender" class="radiotext2"> Prefer not to say </label> 
+              </div>
+
+              <label for="email" class="labeltext"> Email <span style="color: red"> * </span></label>
+              <input type="email" id="email" name="email" class="Email" placeholder="emailaddress@here.com"> <br>
+              <div class="error-message3" id="errorMsg4"> Required* </div>
+             
+              <div class="spacer"> </div>
+
+              <label for="pword" class="labeltext"> Password  <span style="color: red"> * </span> </label>
+
+              <div>
+                <input type="password" id="pword" name="pword" class="Password" placeholder="My Password 4321"> 
+                <input type="checkbox" class="seepass" onclick="myFunction()">
+                <div class="error-message4" id="errorMsg3"> Required* </div>
+                <br>
+              </div>
+
+              <label for="contact" class="Contacttext"> Contact Number</label>
+              <input type="number" id="contact" name="contact" class="Contact" placeholder="XXXX-XXX-XXXX"> <br> <br>
+              <div class="error-message5" id="errorMsg5"> Required* </div>
+        
+              <label for="paragraph" class="textareatext" > Why I Support this Campaign <span style="color: red"> * </span>  </label>
+              <textarea id="paragraph" name="paragraph" rows="10" cols="70"></textarea> <br> <br> 
+              <div class="error-message5" id="errorMsg5"> Required* </div>
+        
+              
+              <button type="submit" id="submitbutton" class="submitbutton"> 
+                SUBMIT
+              </button>
+
+
+              <button type="reset" id="resetbutton" class="resetbutton" onclick="reload()">
+                  RESET
+              </button>
+
+             
+    
+                <span class="close">&times;</span>
+            </fieldset>
+    </div>
+    </form>
+  </div>
+    
+</div> 
+    <!-- END OF SIGN-UP SHEET -->
+
+<script src="/javascript/script.js"> </script>
+</body>
+</html>

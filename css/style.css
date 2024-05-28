@@ -1,0 +1,754 @@
+@font-face {
+  font-family: 'SunbornSansOne';
+  src: url('/Sunborn-SansOne.woff2') format('woff2'),
+       url('Sunborn-SansOne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family:'Roboto-Regular';
+  src:url(/media/Roboto-Regular.ttf);
+  font-weight: 500;
+
+}
+
+@font-face{
+  font-family:'coolvetica';
+  src:url(/media/coolvetica\ rg.otf);
+}
+
+@font-face {
+  font-family: 'SunbornSansOne';
+  src: url('Sunborn-SansOne.woff2') format('woff2'),
+       url('Sunborn-SansOne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* START OF MAIN PAGE */
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-image:url(/images/bg.png);
+  background-size:120vh 49vw;
+  background-repeat:no-repeat;
+  display:flex;
+  overflow:hidden;
+  z-index: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin-bottom:0px;
+  z-index: 0;
+}
+
+.logo img {
+  width: 80px;
+  height:50px;
+  margin-right: 20px;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  z-index: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 20px; 
+  position: relative;
+  z-index: 0;
+}
+
+.content {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.image{
+  flex:auto;
+  z-index:0;
+}
+
+.image img {
+  width:50%;
+}
+
+.text {
+  flex: 2;
+  padding: 0 20px;
+  margin-left:400px;
+  font-size:x-large;
+  font-family:'Roboto-Regular';
+}
+
+.signup{
+  flex:1;
+}
+
+.sign-up h1 {
+  font-size: 45px;
+  color:black;
+  margin-left:250px;
+  margin-top:20px;
+  font-family:'Roboto-Condensed';
+}
+
+.sign-up button {
+  background-color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  border: none;
+  padding: 30px 130px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left:95px;
+  margin-top:45px;
+  font-size:30px;
+  font-family:'coolvetica';
+}
+
+.collaboration {
+  text-align:center;
+  color:black;
+  margin-left:850px;
+  margin-top:-160px;
+  font-family:'roboto-regular';
+  font-weight:600;
+}
+
+.creds{
+  font-weight:normal;
+}
+
+.collaboration img {
+  width: 300px;
+}
+
+.backgroundimage{
+  border: 0vh solid black;
+  width: 101vw;
+  height: 105vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -5vh;
+  margin-left: -2vh;
+}
+
+span {
+  color: white;
+}
+
+/* END OF MAIN PAGE */
+
+/* START OF SIGN-UP SHEET PAGE */
+
+/* TECHNICAL STUFF */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 22.5px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 1vh;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 45vw;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: -92.5vh;
+  color: aliceblue;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.error-message1 {
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  color: red;
+  font-size: 1.5vh;
+  position: fixed;
+  margin-left: 15vw;
+  display: inline-block;
+}
+
+.error-message2 {
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  color: red;
+  font-size: 1.5vh;
+  position: fixed;
+  margin-left: 34.3vw;
+  display: inline-block;
+  margin-top: -2.7vh;
+  display: none;
+}
+
+.error-message3 {
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  color: red;
+  font-size: 1.5vh;
+  position: fixed;
+  margin-left: 34.3vw;
+  display: inline-block;
+  margin-top: 0vh;
+  display: none;
+}
+
+.error-message4 {
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  color: red;
+  font-size: 1.5vh;
+  position: fixed;
+  margin-left: 31.6vw;
+  display: inline-block;
+  margin-top: 1vh;
+  display: none;
+}
+
+.error-message5 {
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+  color: red;
+  font-size: 1.5vh;
+  position: fixed;
+  margin-left: 31.6vw;
+  display: inline-block;
+  margin-top: 20.7vh;
+  display: none;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+    background-color: #e6e4df;
+}
+
+fieldset{
+    border:0;
+}
+
+.formheader{
+    width: 45.2vw;
+    height: 10vh;
+    background-color: #2d2d37;
+    margin-bottom: 2vh;
+    z-index: 100;
+    margin-top: -3vh;
+    margin-left: -0.1vw;
+}
+
+.formheadertextbox{
+    border: 0vh solid black;
+    width: 100%;
+    height: 4vh;
+    margin-top: -8vh;
+    margin-left: 6.5vw;
+}
+
+.formheadertext1{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: #ede9e7;
+    font-size: 4vh;
+    font-style: bold;
+    margin-left: 1vh;
+    letter-spacing: 0.5vh;
+    margin-top: -2vh;
+}
+
+.formheadertext2{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #ede9e7;
+    font-size: 2vh;
+    font-style: bold;
+    margin-left: 1vh;
+    margin-top: 0vh;
+}
+
+.formlogo img{
+  width: 80px;
+  height: 50px;
+  margin-left: 1.75vw;
+  margin-top: 1.25vh;
+}
+
+.Name1{
+    display: inline-block;
+    width: 16.5vw;
+    height: 4.5vh;
+    margin-left: 2.5vw;
+    border: none;
+
+    font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2d2d37;
+
+    font-size: 3vh;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    border-radius: 1vh;
+}
+
+.Name2{
+    display: inline-block;
+    width: 16.5vw;
+    height: 4.5vh;
+    margin-left: 1vw;
+    border: none;
+
+    font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2d2d37;
+
+    font-size: 3vh;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    border-radius: 1vh;
+
+    position: fixed;
+}
+
+.nametext{
+    color: #2d2d37;
+}
+
+.labeltext{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2d2d37;
+    font-weight: bolder;
+    margin-left: 2.5vw;
+}
+
+.radiobutton1{
+    border: 0vh solid black;
+    background-color: white;
+    width: 12vw;
+    height: 5vh;
+
+    margin-left: 2.5vw;
+
+    margin-top: 0.5vh;
+    border-radius: 1vh;
+}
+
+.radiobutton2{
+  border: 0vh solid black;
+  background-color: white;
+  width: 12vw;
+  height: 5vh;
+  margin-bottom: 2vh;
+  margin-top: -5vh;
+  margin-left: 15.15vw;
+  border-radius: 1vh;
+}
+
+.radiobutton3{
+  border: 0vh solid black;
+  background-color: white;
+  width: 12vw;
+  height: 5vh;
+  margin-bottom: 2vh;
+  margin-top: -7vh;
+  margin-left: 27.75vw;
+  border-radius: 1vh;
+}
+
+.radiotext1{
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2d37;
+  font-weight: bolder;
+  margin-left: 0.15vh;
+  font-size: 2.5vh;
+  display: flex;
+  margin-top: -3.5vh;
+  margin-left: 5vh;
+}
+
+.radiotext2{
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2d37;
+  font-weight: bolder;
+  margin-left: 0.15vh;
+  font-size: 2vh;
+  display: flex;
+  margin-top: -3.25vh;
+  margin-left: 5vh;
+
+}
+
+.radiocheck{
+  border: 1vh solid black;
+  background-color: white;
+  width: 2vw;
+  height: 3vh;
+  margin-top: 1vh;
+}
+
+.Email{
+  display: inline-block;
+    width: 35.75vw;
+    height: 3.5vh;
+    margin-left: 2.5vw;
+    border: none;
+
+    font-size: 3vh;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    margin-top: 0.5vh;
+    border-radius: 1vh;
+}
+
+.Password
+{
+  display: inline-block;
+    width: 33vw;
+    height: 3.5vh;
+    margin-left: 2.5vw;
+    border: none;
+
+    font-size: 3vh;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    margin-top: 0.5vh;
+    border-radius: 1vh;
+    z-index: 4;
+}
+
+.Contact
+{
+  display: inline-block;
+    width: 33vw;
+    height: 3.5vh;
+    margin-left: 2.5vw;
+    border: none;
+
+    font-size: 3vh;
+
+    padding: 1vh;
+    padding-left: 2vh;
+    margin-top: 0.5vh;
+    border-radius: 1vh;
+    z-index: 4;
+}
+
+.Contacttext{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2d2d37;
+    font-weight: bolder;
+    margin-left: 2.5vw;
+    margin-top: -50vw;
+}
+
+.spacer{
+  border: 0vh solid black;
+  width: 100%;
+  height: 2vh;
+}
+
+
+textarea{
+  display: inline-block;
+  width: 35.75vw;
+  height: 15vh;
+  margin-left: 2.5vw;
+  border: none;
+
+  font-size: 3vh;
+
+  padding: 1vh;
+  padding-left: 2vh;
+  margin-top: 0.5vh;
+
+  border-radius: 1vh;
+}
+
+.seepass{
+  width: 3vh;
+  height: 3vh;
+  border: none;
+  margin-left: 38.25vw;
+  margin-top: -4.25vh;
+  z-index: 5;
+  display: flex;
+}
+
+.textareatext{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #2d2d37;
+    font-weight: bolder;
+    margin-left: 2.5vw;
+}
+
+.submitbutton{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10vw;
+    font-size: 3vh;
+
+  border: 0vh solid black;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 1vh;
+  background-color: #2d2d37;
+
+  letter-spacing: 0.5vh;
+}
+
+.submitbutton:hover {
+  background-color: #212125;
+}
+
+.resetbutton{
+  font-family: 'SunbornSansOne', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-weight: bolder;
+    margin-left: 1vw;
+    font-size: 3vh;
+
+  border: 0vh solid black;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 1vh;
+  background-color: #2d2d37;
+
+  letter-spacing: 0.5vh;
+}
+
+.resetbutton:hover {
+  background-color: #212125;
+}
+/* END OF SIGN-UP SHEET */
+
+/* START OF DASHBOARD PAGE */
+.container {
+  border: 0vh solid black;
+  width: 50vw;
+  text-align: center;
+  margin-top: 2.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.starter {
+  margin-bottom: 20px;
+  font-family: 'SunbornSansOne', sans-serif;
+  font-weight: 1000;
+  font-size: 10vh;
+  margin-top: 5vh;
+  margin-left: 4vw;
+  color: white;
+}
+
+.starter h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.logpic {
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: url('/images/logo.png') no-repeat center center;
+  background-size: contain;
+  margin-top: -3vh;
+  margin-left: -3.5vh;
+  z-index: 1;
+}
+
+.log {
+  position: absolute;
+  border: 0.2vh solid black;
+  background-color: blueviolet;
+  height: 16vh;
+  width: 16vh;
+  border-radius: 50%;
+  margin-top: -17vh;
+  margin-left: 85vw;
+  z-index: 0;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.Namebox {
+  border: 0.5vh solid black;
+  width: 50vw;
+  height: 7.5vh;
+  border-radius: 1vh;
+  background-color: #524F81;
+  border-radius: 1vh;
+  fill-opacity: 50%;
+}
+
+.Genderbox{
+  border: 0.5vh solid black;
+  width: 50vw;
+  height: 7.5vh;
+  border-radius: 1vh;
+  background-color: #524F81;
+  border-radius: 1vh;
+  fill-opacity: 50%;
+}
+
+.Emailbox{
+  border: 0.5vh solid black;
+  width: 50vw;
+  height: 7.5vh;
+  background-color: #524F81;
+  border-radius: 1vh;
+  fill-opacity: 50%;
+}
+
+.Paragraphbox{
+  padding: 1vh;
+  border: 0.5vh solid black;
+  width: 50vw;
+  height: 35vh;
+  border-radius: 1vh;
+  background-color: #524F81;
+  border-radius: 1vh;
+  fill-opacity: 50%;
+  word-break: break-all;
+}
+
+.Spacer{
+  border: 0vh solid black;
+  width: 50vw;
+  height: 1.5vh;
+}
+
+.form-row span {
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  opacity: 100%;
+  font-size: 24px;
+  margin-top: 1vh;
+}
+
+.footer { 
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
+  font-weight: 1000;
+  text-align: center;
+}
