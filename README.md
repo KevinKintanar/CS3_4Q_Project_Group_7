@@ -16,14 +16,14 @@ Usage:
 To sign up to the organization, the following is REQUIRED from the user:
 - First Name
 - Last Name
-- Gender
+- Gender/Sex (Choose from 3 Options)
 - Email Address
 - Password
-- Contact Number
--  Reason for joining
-Where the sign-up interface also includes a checkbox to see the password of the email, an X-button to close the form, a reset button that resets the form fields in case the user needs to clear the information they have entered, and the submit button for entering the information to sign up for the organization.
-After successfully signing up, users will be directed to the dashboard, where they can see the profile information they have submitted.
+- Reason for Supporting the Campaign
 
+Where the sign-up interface also includes a checkbox to see the password of the email, an X-button to close the form, a reset button that resets the form fields in case the user needs to clear the information they have entered, and the submit button for entering the information to sign up for the organization.
+
+After successfully signing up, users will be directed to the dashboard, where they can see the profile information they have submitted (First and Last Name, Gender/Sex, Email, and Reason for Supporting the Campaign).
 
 
 Contact:
