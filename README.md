@@ -10,7 +10,7 @@ Table of Contents:
     Contact
 
 Installation: 
-To open the webpage, the user must download all files before continuing. With the repository: https://github.com/KevinKintanar/CS3_4Q_Project_Group_7, select the green button that says "code". After seeing the dropdown button, select "Download zip". After, extract the folder and open it on VSCODE to run.
+To open the webpage, the user must download all files before continuing. With the repository: https://github.com/KevinKintanar/CS3_4Q_Project_Group_7, select the green button that says "code". After seeing the dropdown button, select "Download zip". After, extract the zip folder and open it on VSCODE to run.
 
 Usage: 
 To sign up to the organization, the following is REQUIRED from the user:
