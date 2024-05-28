@@ -28,14 +28,22 @@ After successfully signing up, users will be directed to the dashboard, where th
 
 Contact:
 For any concerns or inquiries, please address them to the contributors of this project: Kevin Kintanar, Fiona Sumugat, and Gianni Regulacion.
+
+
 Kevin Kintanar: 
+
 GITHUB - https://github.com/KevinKintanar
+
 EMAIL - kevinjude.kintanar@smc.pshs.edu.ph 
 
 Fiona Sumugat: 
+
 GITHUB - https://github.com/FionaSumugat
+
 EMAIL - fionaashley.sumugat@smc.pshs.edu.ph 
 
 Gianni Regulacion: 
+
 GITHUB - https://github.com/GianniRegulacion
+
 EMAIL - gianniveronique.regulacion@smc.pshs,edu,ph
